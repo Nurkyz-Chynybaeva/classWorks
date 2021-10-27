@@ -1,23 +1,22 @@
-package com.example.a201021
 
 import android.os.Bundle
-import android.view.View
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
-import org.w3c.dom.Text
+import com.example.a201021.R
 
 
 class MainActivity : AppCompatActivity(){              //View.OnClickListener
 
-private lateinit var textV:TextView
+    private lateinit var textV:TextView
+    private lateinit var layoutV:TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
         textV = findViewById(R.id.text)
+        layoutV= findViewById(R.id.layout)
 
 
 
@@ -26,20 +25,26 @@ private lateinit var textV:TextView
         val btn3 = findViewById<AppCompatButton>(R.id.btn3)
 
         btn1.setOnClickListener{
-            textV.text = "click 1"
-            Toast.makeText(this, "click 1", Toast.LENGTH_SHORT).show()
+            textV.text = "red"
+            layoutV.background(android.R.color.holo_red_dark)
+
         }
         btn2.setOnClickListener{
-            textV.text = "click 2"
-            Toast.makeText(this, "click 1", Toast.LENGTH_LONG).show()
+            textV.text = "yello"
+//            layoutV.setBackgroundColor(android.R.color.holo_orange_light)
+            layoutV.background(android.R.color.holo_orange_light)
+
+
         }
         btn3.setOnClickListener{
-            textV.text = "click 3"
-            Toast.makeText(this, "click 1", Toast.LENGTH_SHORT).show()
+            textV.text = "green"
+            layoutV.background(android.R.color.holo_green_dark)
+
+
         }
 
 
-   }
+    }
 
 
 
@@ -80,4 +85,13 @@ private lateinit var textV:TextView
 //        textV.text = msg
 //    }
 
-    }
+}
+
+private fun TextView.background() {
+
+}
+
+
+
+
+
