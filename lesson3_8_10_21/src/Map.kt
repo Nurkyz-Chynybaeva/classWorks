@@ -9,10 +9,11 @@ fun main(){
         null to "xxx"
     )
     println(map["2"])
-    print(map.entries)
+    println(map[null])
 
-//    map.forEach{ (key, value) ->
-//        println("key = $key value = $value")
-//
-//    }
+
+    map.forEach{ (key, value) ->
+        println("key = $key value = $value")
+
+    }
 }
