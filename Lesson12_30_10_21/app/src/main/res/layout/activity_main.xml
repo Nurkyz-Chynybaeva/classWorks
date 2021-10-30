@@ -22,7 +22,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="@id/tx"
+        app:layout_constraintTop_toTopOf="@id/tx1"
+
         android:text="button"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
