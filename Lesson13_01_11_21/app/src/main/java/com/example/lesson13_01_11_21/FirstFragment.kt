@@ -28,10 +28,10 @@ class FirstFragment: Fragment(R.layout.first_fragment) {
     private fun onClick(view: View){
      when(view.id){
          R.id.firstFragment_btn1 -> {
-         listener.onButtonClicked("ice cream")
+         listener.onButtonClicked("ice creams")
          }
          R.id.firstFragment_btn2 -> {
-             listener.onButtonClicked("banana")
+             listener.onButtonClicked("bananas")
          }
 
      }
