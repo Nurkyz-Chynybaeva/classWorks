@@ -3,9 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/holo_green_light">
+    android:background="@color/purple_200">
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/txt_main"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:id="@+id/txt_fragment"
         android:text="FRAGMENT 1"
         android:textSize="30dp"
         android:textColor="@color/black"
@@ -15,7 +16,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         />
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_fragment"
+        app:layout_constraintTop_toBottomOf="@id/txt_fragment"
+        app:layout_constraintBottom_toTopOf="@id/btn_fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="enter the text to ACTIVITY"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_fragment"
+        app:layout_constraintTop_toBottomOf="@id/edit_fragment"
+     android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send message to ACTIVITY"
+        />
+
+
+
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
