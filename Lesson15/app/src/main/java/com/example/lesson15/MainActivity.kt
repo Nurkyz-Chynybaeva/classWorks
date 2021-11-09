@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity(), OnButtonClicked {
 //        btn.setOnClickListener {
 //            val fragment1 = supportFragmentManager.findFragmentById(R.id.fragment) as? Fragment1
 //            fragment1?.setText(edit.text.toString())
-//
+
 //            fragment1 as MainActivity
 //        }
 

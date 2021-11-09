@@ -3,7 +3,7 @@ package com.example.lesson15
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class MainActivity2 : AppCompatActivity(), OnButtonClicked {
+class MainActivity2 : AppCompatActivity(), OnButtonClicked{
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

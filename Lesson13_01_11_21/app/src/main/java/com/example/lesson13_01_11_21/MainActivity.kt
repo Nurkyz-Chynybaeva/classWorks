@@ -8,6 +8,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
 
 class MainActivity : AppCompatActivity(), OnButtonClicked{
+
     private lateinit var txtM: AppCompatTextView
 
     override fun onCreate(savedInstanceState: Bundle?) {

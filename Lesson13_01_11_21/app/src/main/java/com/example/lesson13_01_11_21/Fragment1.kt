@@ -12,9 +12,7 @@ import androidx.appcompat.widget.AppCompatEditText
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.fragment.app.Fragment
 
-
-class Fragment1: Fragment(R.layout.fragment1) {
-
+class Fragment1: Fragment(R.layout.fragment1){
 
     private lateinit var txt:AppCompatTextView
     private lateinit var listener: OnButtonClicked
@@ -22,7 +20,6 @@ class Fragment1: Fragment(R.layout.fragment1) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         txt = view.findViewById(R.id.txt_fragment)
-
 
         val editF = view.findViewById<AppCompatEditText>(R.id.edit_fragment)
         val btnF = view.findViewById<AppCompatButton>(R.id.btn_fragment)
@@ -43,7 +40,7 @@ class Fragment1: Fragment(R.layout.fragment1) {
     }
 
 
-//    override fun onAttach(context: Context) {                            // этот метод вызывается тогда, когда фрагмент привязывается к activity
+//    override fun onAttach(context: Context){       // этот метод вызывается тогда, когда фрагмент привязывается к activity
 //        super.onAttach(context)
 //        Log.e(TAG, "onAttach")
 //    }
@@ -95,15 +92,13 @@ class Fragment1: Fragment(R.layout.fragment1) {
 //        Log.e(TAG, "onDestroy")
 //    }
 //
-//    override fun onDetach() {                               // этот метод вызывается тогда, когда фрагмент отвязывается от activity
+//    override fun onDetach() {                       // этот метод вызывается тогда, когда фрагмент отвязывается от activity
 //        super.onDetach()
 //        Log.e(TAG, "onDetach")
 //    }
 //    companion object{
 //        const val TAG = "Fragment1"
 //    }
-
-
 
 
 
