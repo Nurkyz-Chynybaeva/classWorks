@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Fragments</string>
+    <string name="enter_the_text">enter the text</string>
+    <string name="enter_the_text_to_fragment">enter the text to fragment</string>
+    <string name="btn1">btn1</string>
+    <string name="btn2">btn2</string>
+    <string name="btn3">btn3</string>
 </resources>
