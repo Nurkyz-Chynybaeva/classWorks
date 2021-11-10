@@ -3,12 +3,11 @@ package com.example.fragments
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
 
-class MainActivity : AppCompatActivity(){
+class MainActivity : AppCompatActivity() {
 
     private lateinit var txt1: AppCompatTextView
     private lateinit var layout: ConstraintLayout
@@ -41,8 +40,8 @@ class MainActivity : AppCompatActivity(){
                 .hide(fragment1!!)
                 .commit()
         }
-        btn3.setOnClickListener{
-        startActivity( Intent(this, MainActivity2::class.java))
+        btn3.setOnClickListener {
+            startActivity(Intent(this, MainActivity2::class.java))
         }
     }
 
@@ -57,6 +56,4 @@ class MainActivity : AppCompatActivity(){
             .addToBackStack(null)
             .commit()
     }
-
-
 }
