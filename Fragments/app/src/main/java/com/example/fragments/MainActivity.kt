@@ -7,7 +7,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), OnClickListener {
 
     private lateinit var txt1: AppCompatTextView
     private lateinit var layout: ConstraintLayout
@@ -55,5 +55,9 @@ class MainActivity : AppCompatActivity() {
             .add(R.id.fragment, Fragment2(), "fragment2")
             .addToBackStack(null)
             .commit()
+    }
+
+    override fun onClicked(text: String) {
+        // ---
     }
 }
