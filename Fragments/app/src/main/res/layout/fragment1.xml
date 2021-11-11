@@ -3,24 +3,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/purple_500">
+    android:background="@android:color/darker_gray">
     <androidx.appcompat.widget.AppCompatTextView
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="30dp"
-        android:id="@+id/ftxt2"
+        android:id="@+id/f1txt"
         android:text="this is fragment 2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn1"
+        android:id="@+id/f1btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="btn1"
-        app:layout_constraintTop_toBottomOf="@id/ftxt2"
+        app:layout_constraintTop_toBottomOf="@id/f1txt"
         android:layout_margin="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
