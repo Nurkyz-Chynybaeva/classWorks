@@ -3,11 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@android:color/holo_green_light">
+    android:clickable="true"
+    android:focusable="true"
+>
+<!--    android:background="@android:color/holo_green_light"-->
     <androidx.appcompat.widget.AppCompatTextView
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="30dp"
         android:id="@+id/f3txt"
@@ -20,9 +22,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="btn1"
+
         app:layout_constraintTop_toBottomOf="@id/f3txt"
         android:layout_margin="20dp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
 

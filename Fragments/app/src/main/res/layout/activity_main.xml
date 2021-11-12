@@ -9,7 +9,7 @@
 
     <TextView
 
-        android:id="@+id/txt1"
+        android:id="@+id/txtMain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -23,7 +23,7 @@
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edit1"
         android:textSize="27dp"
-        app:layout_constraintTop_toBottomOf="@id/txt1"
+        app:layout_constraintTop_toBottomOf="@id/txtMain"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="20dp"
@@ -32,39 +32,39 @@
         android:layout_height="wrap_content"
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn1"
+        android:id="@+id/mbtn1"
         app:layout_constraintTop_toBottomOf="@id/edit1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/btn2"
+        app:layout_constraintEnd_toEndOf="@id/mbtn2"
         android:text="btn1"
         android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn2"
+        android:id="@+id/mbtn2"
         app:layout_constraintTop_toBottomOf="@id/edit1"
-        app:layout_constraintStart_toStartOf="@id/btn1"
-        app:layout_constraintEnd_toEndOf="@id/btn3"
+        app:layout_constraintStart_toStartOf="@id/mbtn1"
+        app:layout_constraintEnd_toEndOf="@id/mbtn3"
         android:text="btn2"
         android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn3"
+        android:id="@+id/mbtn3"
         app:layout_constraintTop_toBottomOf="@id/edit1"
-        app:layout_constraintStart_toStartOf="@id/btn2"
-        app:layout_constraintEnd_toEndOf="@id/btn4"
+        app:layout_constraintStart_toStartOf="@id/mbtn2"
+        app:layout_constraintEnd_toEndOf="@id/mbtn4"
         android:text="btn3"
         android:layout_margin="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         />
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn4"
+        android:id="@+id/mbtn4"
         app:layout_constraintTop_toBottomOf="@id/edit1"
-        app:layout_constraintStart_toStartOf="@id/btn3"
+        app:layout_constraintStart_toStartOf="@id/mbtn3"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="btn4"
         android:layout_margin="20dp"
@@ -74,10 +74,10 @@
 
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fragment"
+        android:id="@+id/mainFragment"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@id/mbtn1"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="match_parent"
         android:layout_height="0dp"
